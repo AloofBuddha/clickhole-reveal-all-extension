@@ -6,16 +6,16 @@
   "content_scripts": [
     {
       "matches": ["http://www.clickhole.com/quiz/*"],
-      "css": ["borrowed-clickhole.css"],
+      "css": ["css/borrowed-clickhole.css"],
       "js": [
-      	"jquery.min.js",
-      	"reveal-all-script.js"
+      	"scripts/jquery.min.js",
+      	"scripts/reveal-all-script.js"
     	]
     }
   ],
   "author": "Benjamin Cohen <bac1087@gmail.com>",
   "icons": {
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   }
 }
