@@ -1,5 +1,6 @@
 {
   "name": "ClickHole - REVEAL ALL!",
+  "short_name": "CH-REVEALALL",
   "description": "Adds a button to ClickHole quizzes to reveal all the outcomes",
   "version": "1",
   "manifest_version": 2,
