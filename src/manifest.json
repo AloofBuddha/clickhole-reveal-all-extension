@@ -1,0 +1,21 @@
+{
+  "name": "ClickHole - Reveal All!",
+  "description": "Adds a button to ClickHole quizzes to reveal all the outcomes",
+  "version": "1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["http://www.clickhole.com/quiz/*"],
+      "css": ["borrowed-clickhole.css"],
+      "js": [
+      	"bower_components/jquery/dist/jquery.js",
+      	"reveal-all-script.js"
+    	]
+    }
+  ],
+  "author": "Benjamin Cohen <bac1087@gmail.com>",
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
