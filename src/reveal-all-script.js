@@ -3,26 +3,49 @@ console.log("%cClickHole - Reveal All!" +
 	"%c is running on this page.\nTo remove it, disable in chrome://extensions/",
 	"background: #fe621e; color: #fff", "");
 
-var revealAllHtml = [
+var revealAnswers = [
 	'<button ',
-		'class="btn btn-default btn-lg reveal-all">',
-			'Reveal All!',
+		'class="btn btn-default btn-lg btn-reveal-answers">',
+			"Reveal Answers!",
 	'</button>'
-	].join('');
+].join('');
 
-// always display on bottom
-$(".quiz > form").append('<pre>or</pre>', revealAllHtml);
+var revealOutcomes = [
+	'<div class="reveal-outcomes">',
+		'<pre>or</pre>',
+		'<button ',
+			'class="btn btn-default btn-lg btn-reveal-outcomes">',
+				"Reveal Outcomes!",
+		'</button>',
+	'</div>'
+].join('');
 
-// display on top too if has answer-explanations
+// display on top if has answer-explanations
 if ( $(".answer-explanation").length ) {
-	$(".quiz > form").prepend(revealAllHtml);
+	$(".quiz > form").prepend(revealAnswers);
 }
 
-$(".reveal-all").click(function (event) {
+// always display on bottom
+$(".quiz > form").append(revealOutcomes);
+
+// reveal outcomes callback
+$(".btn-reveal-outcomes").click(function (event) {
     event.preventDefault();
 
-	$(".answer-explanation").css("display", "block");
 	$(".outcomes").css("display", "block");
 	$(".outcome").css("display", "list-item");
+
+	// removes itself after first call
+	$(".reveal-outcomes").remove();
+});
+
+// reveal answers callback
+$(".btn-reveal-answers").click(function (event) {
+  event.preventDefault();
+
+	$(".answer-explanation").css("display", "block");
+
+	// removes itself after first call
+	$(".btn-reveal-answers").remove();
 });
 
