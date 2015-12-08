@@ -12,12 +12,13 @@ Download it on the [Chrome Web Store](https://chrome.google.com/webstore/detail/
 
 ## Screenshots
 
+Reveal Answers ...
 ![Screenshot 1](/promotional/screenshot1.png)
-
+... reveals answers
 ![Screenshot 2](/promotional/screenshot2.png)
-
+Reveal outcomes ...
 ![Screenshot 3](/promotional/screenshot3.png)
-
+... I'm insulting your intelligence. Very uncouth of me. Now go and download it! Or don't! You do you!
 ![Screenshot 4](/promotional/screenshot4.png)
 
 
