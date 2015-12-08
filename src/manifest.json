@@ -15,7 +15,7 @@
   ],
   "author": "Benjamin Cohen <bac1087@gmail.com>",
   "icons": {
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "48": "clickhole-icon-sm.png",
+    "128": "clickhole-icon-md.png"
   }
 }
